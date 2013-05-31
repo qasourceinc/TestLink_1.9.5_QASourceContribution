@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-language" content="en" />
+<meta name="author" content="Martin Havlat" />
+<meta name="copyright" content="GNU" />
+<meta name="robots" content="NOFOLLOW" />
+<title>TestLink Instructions</title>
+<style media="all" type="text/css">
+@import "{$basehref}{$smarty.const.TL_THEME_CSS_DIR}testlink.css";
+</style>
+
+<script>
+// need due to global coupling in open_help_window()
+var fRoot='{$basehref}';
+</script>
+
+<script type="text/javascript" src="{$basehref}gui/javascript/testlink_library.js">
+</script>
+</head>
+<body>
+<div class="workBack">
+<h1>Print Test Specification</h1>
+
+<h2>Purpose:</h2>
+
+<p>From here you can print a single test case, all the test cases within a test suite, 
+or all the test cases in a test project or plan.</p>
+
+<h2>Get Started:</h2>
+
+<ol>
+<li>
+<p>Select the parts of the test cases you want to display, and then click on a test case, test suite, or the test project.
+A printable page will be displayed.</p>
+</li>
+
+<li>
+<p>Use the "Show As" drop-box in the navigation pane to specify whether you want the information displayed as HTML or in a 
+Microsoft Word document. See <span class="help" onclick="javascript:open_help_window('printFilter','{$locale}');">help</span> for more
+information.</p>
+</li>
+
+<li><p>Use your browser's print functionality to actually print the information.<br />
+ <i>Note: Make sure to only print the right-hand frame.</i></p></li>
+</ol>
+</div>
+</body>
+</html>
+
