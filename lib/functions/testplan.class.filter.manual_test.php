@@ -226,7 +226,7 @@
 													) ";
 		$this->db->insertInTempTable($tt_query);
 	
-		$staticSql[0]	=	"select node_order AS spec_order, node_order , id, parent_id, name, node_type_id,0 AS tcversion_id,count  from (SELECT NHTS.node_order AS spec_order, NHTS.node_order AS node_order,NHTS.id,NHTS.parent_id, NHTS.name, NHTS.node_type_id, 0 AS tcversion_id,hierarchy(NHTS.id,".$tplan_id.",'".$session_id."') as count
+		$staticSql[0]	=	"select node_order AS spec_order, node_order , id, parent_id, name, node_type_id,0 AS tcversion_id,count  from (SELECT NHTS.node_order AS spec_order, NHTS.node_order AS node_order,NHTS.id,NHTS.parent_id, NHTS.name, NHTS.node_type_id, 0 AS tcversion_id,hierarchy(NHTS.id,".$tplan_id.") as count
 				FROM nodes_hierarchy NHTS
 				WHERE NHTS.node_type_id =2 "
 				. $whereClauseTop .
